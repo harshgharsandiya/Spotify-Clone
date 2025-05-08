@@ -30,7 +30,9 @@ songItems.forEach((element, i) => {
     element.querySelector("span").innerText = songs[i].songName;
 });
 
-// audioElement.play();
+audioElement.play();
+masterPlay.classList.add('fa-pause-circle');
+masterPlay.classList.remove('fa-play-circle');
 
 //Handle play pause click
 masterPlay.addEventListener('click', () => {
